@@ -1,10 +1,10 @@
-import pricing
+import pricing as MyPrice
 
 price = 150
 tax_rate = 0.1
 discount = 10
 
-net_price = pricing.get_net_price(
+net_price = MyPrice.get_net_price(
     price,
     tax_rate,
     discount
@@ -12,7 +12,7 @@ net_price = pricing.get_net_price(
 )
 
 print(net_price)
-net_tax =pricing.get_tax(
+net_tax = MyPrice.get_tax(
     price,
     tax_rate,
 )
